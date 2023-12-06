@@ -1,5 +1,8 @@
 # app
 
+##注意
+此项目在快结束时才使用git推送到仓库中，所以提交次数少了
+
 ## Project setup
 ```
 npm install
