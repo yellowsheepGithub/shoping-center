@@ -31,8 +31,7 @@ export default {
   mounted() {
     //是floor的父亲发请求，再根据数据渲染相应数量的floor
     this.$store.dispatch("getFloorList");
-    //携带token向服务器获取用户信息
-    this.$store.dispatch("getUserInfo");
+    
   },
   computed: {
     ...mapState({
