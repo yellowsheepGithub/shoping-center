@@ -10,7 +10,8 @@ export default [
     {
         path: '/shopcart',
         name: 'ShopCart',
-        component: ShotCart,
+        // component: () => import(/*webpackChunkName: "shopCart"*/'@/pages/ShopCart/index.vue'),
+        component: ShopCart,
         meta: { isShow: true }
     },
     {

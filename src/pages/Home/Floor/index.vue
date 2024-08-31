@@ -9,8 +9,7 @@
               <li
                 class="active"
                 v-for="(nav, index) in list.navList"
-                :key="index"
-              >
+                :key="index">
                 <a href="#tab1" data-toggle="tab">{{ nav.text }}</a>
               </li>
             </ul>
@@ -33,8 +32,7 @@
                     <div
                       class="swiper-slide"
                       v-for="carousel in list.carouselList"
-                      :key="carousel.id"
-                    >
+                      :key="carousel.id">
                       <img :src="carousel.imgUrl" />
                     </div>
                   </div>
@@ -81,6 +79,7 @@ export default {
   name: "Floor",
   props: ["list"],
   mounted() {
+    console.log(this);
     let mySwiper = new Swiper(this.$refs.floor1Swiper, {
       //设置轮播图防线
       direction: "horizontal",
@@ -116,7 +115,7 @@ export default {
 };
 </script>
 
-<style scoped lang='less'>
+<style scoped lang="less">
 .floor {
   margin-top: 15px;
 
